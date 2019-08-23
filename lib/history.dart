@@ -20,13 +20,14 @@ class History extends StatelessWidget {
   }
 
   Widget _operationsList(List<String> operations) {
+    var reversedop = operations.reversed.toList();
     return ListView.builder(
-      itemCount: operations.length,
+      itemCount: reversedop.length,
       itemBuilder: (BuildContext context, int i) {
         return ListTile(
-          title: Text(operations[i]),
+          title: Text(reversedop[i]),
           onTap: () {
-            Navigator.pop(context, operations[i]);
+            Navigator.pop(context, reversedop[i]);
           },
           leading: Container(
             decoration: BoxDecoration(
@@ -34,7 +35,7 @@ class History extends StatelessWidget {
               borderRadius: BorderRadius.circular(50)
             ),
             child: Text(
-              Calculator.parseString(operations[i]),
+              Calculator.parseString(reversedop[i]),
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             padding: EdgeInsets.all(5),
