@@ -17,3 +17,9 @@ Let me know if you encounter issues with the calculator
 | --- | --- |
 | ![image](images/calculator.png) | ![history](images/history.png) |
 
+## KR
+원본: https://github.com/deriegle/flutter-calculator
+
+앱개발은 남의 일로 생각했는데 Flutter 구성을 하고나니 해볼만하겠다는 생각이 들었다.
+* 기본 문법을 익히기 위한 계산기 구현
+* 멋대로 기능 추가하고 변경해가면서 익숙해지기 위함
