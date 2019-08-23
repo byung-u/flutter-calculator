@@ -9,14 +9,18 @@ class NumberDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: EdgeInsets.all(20),
-        child: Row(
+        child: Wrap(
           children: <Widget>[
-            Text(
-              value,
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Container( 
+                child: Text(
+                  value,
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.yellow, backgroundColor: Colors.black),
+                ),
+              ),
             ),
           ],
-          mainAxisAlignment: MainAxisAlignment.end,
         ));
   }
 }
