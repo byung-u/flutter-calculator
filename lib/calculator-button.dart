@@ -22,9 +22,9 @@ class CalculatorButton extends StatelessWidget {
               onPressed: () => onTap(buttonText: text),
               child: Text(
                 text,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               ),
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.all(10),
               highlightColor: Colors.blueGrey[100],
               splashColor: Colors.blueAccent[100],
             )));
